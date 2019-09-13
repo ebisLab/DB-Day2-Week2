@@ -13,6 +13,6 @@ exports.up = function (knex) {
 
 exports.down = function (knex) {
     //undo everything from up table. 
-    return knex.drobTableIfExists('cars') //delete
+    return knex.schema.dropTableIfExists('cars') //delete
 
 };

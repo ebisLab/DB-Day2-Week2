@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
 
 router.get('/:id', (req, res) => {
     const { id } = req.params;
-
     Cars.getById(id)
         .then(car => {
             //checking if book exists
